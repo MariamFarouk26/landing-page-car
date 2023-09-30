@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car website</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--for font awesome icons -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/car-logo.png" alt="logo">
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Variations</a>
+                <a href="#">Specials</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="text">
+            <h4>PowerFul, Fun and</h4>
+            <h1>Fierce to <br> <span>Drive</span></h1>
+            <p>Real Poise, Real Power, Real Performance.</p>
+            <a href="#" class="btn"> book a test ride</a>
+        </div>
+    </div>
+
+    <script>
+        let herovar = document.querySelector(".hero");
+
+        setInterval(() => {
+            herovar.style.backgroundImage ="url(img/bg-light.jpg)"
+            setTimeout(() => {
+                herovar.style.backgroundImage ="url(img/bg.jpg)"
+            }, 1000);            
+        }, 2000);
+    </script>
+</body>
+</html>
